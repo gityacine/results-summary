@@ -20,14 +20,14 @@ export default function Skill(props) {
         },
     ];
     return (
-        <div className={`flex justify-between ${colors[props.colorIndex].background} p-4 rounded-xl shadow`}>
+        <div className={`flex justify-between ${colors[props.colorIndex].background} items-center p-4 rounded-xl shadow`}>
             <div className="flex space-x-3">
                 <img src={props.source} alt="icon" />
-                <span className={`${colors[props.colorIndex].main} font-hankengrotesk text-lg`}>{props.category}</span>
+                <span className={`${colors[props.colorIndex].main} font-hankengrotesk text-lg sm:text-base`}>{props.category}</span>
             </div>
             <div>
-                <span className="font-hankengrotesk text-lg font-bold">{props.score}</span>
-                <span className="font-hankengrotesk text-lg text-[#868593]"> / 100</span>
+                <span className="font-hankengrotesk text-lg sm:text-base font-bold">{props.score}</span>
+                <span className="font-hankengrotesk text-lg sm:text-base text-[#868593]"> / 100</span>
             </div>
             
         </div>
